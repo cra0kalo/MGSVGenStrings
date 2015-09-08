@@ -70,6 +70,7 @@ namespace genstr.FOXEngine
 
         public class fpk_data
         {
+            public bool isValid;
             public uint32 valuePairB_a;
             public uint32 valuePairB_b;
             public uint64 unkPtrC;
@@ -83,12 +84,22 @@ namespace genstr.FOXEngine
             {
                 valuePairB_a = IO.ReadUInt32(br, endian);
                 valuePairB_b = IO.ReadUInt32(br, endian);
-                unkPtrC = IO.ReadUInt64(br, endian);
-                unkPtrC_DataSize = IO.ReadUInt64(br, endian);
-                strTableOffset = IO.ReadUInt32(br, endian);
-                valuePairD_b = IO.ReadUInt32(br, endian);
-                valuePairE_a = IO.ReadUInt32(br, endian);
-                valuePairE_b = IO.ReadUInt32(br, endian);
+
+                if (br.BaseStream.Position < br.BaseStream.Length)
+                {
+                    unkPtrC = IO.ReadUInt64(br, endian);
+                    unkPtrC_DataSize = IO.ReadUInt64(br, endian);
+                    strTableOffset = IO.ReadUInt32(br, endian);
+                    valuePairD_b = IO.ReadUInt32(br, endian);
+                    valuePairE_a = IO.ReadUInt32(br, endian);
+                    valuePairE_b = IO.ReadUInt32(br, endian);
+
+                    isValid = true;
+                }
+                else
+                {
+                    isValid = false;
+                }
             }
         }
 

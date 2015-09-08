@@ -63,6 +63,8 @@ namespace genstr.FOXEngine
 
 
                 fpk_data fpk_d = new fpk_data(br, Endian);
+                if(!fpk_d.isValid)
+                    return false;
 
                 //Calc
                 int64 data_end_marker = (int64)fpk_d.unkPtrC;
