@@ -1,6 +1,5 @@
 E:\Users\Cra0kalo\Dropbox\VS\MGSVGenStrings\genstr\genstr\bin\Debug\genstr.exe.config
 E:\Users\Cra0kalo\Dropbox\VS\MGSVGenStrings\genstr\genstr\bin\Debug\genstr.exe
 E:\Users\Cra0kalo\Dropbox\VS\MGSVGenStrings\genstr\genstr\bin\Debug\genstr.pdb
-E:\Users\Cra0kalo\Dropbox\VS\MGSVGenStrings\genstr\genstr\obj\Debug\genstr.csprojResolveAssemblyReference.cache
 E:\Users\Cra0kalo\Dropbox\VS\MGSVGenStrings\genstr\genstr\obj\Debug\genstr.exe
 E:\Users\Cra0kalo\Dropbox\VS\MGSVGenStrings\genstr\genstr\obj\Debug\genstr.pdb
