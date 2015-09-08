@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cra0Framework.Core.Min\IO\IO.cs" />
+    <Compile Include="Cra0Framework.Core.Min\Utilz\Utilz.cs" />
+    <Compile Include="FOXEngine\FPK.Core.cs" />
     <Compile Include="FOXEngine\FPK.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
